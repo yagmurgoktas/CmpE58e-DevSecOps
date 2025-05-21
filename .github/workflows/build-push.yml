@@ -2,7 +2,7 @@ name: Build & Push to Cloud
 on:
   push:
     branches:
-      - '**'
+      - 'main'
 
 jobs:
   docker:
