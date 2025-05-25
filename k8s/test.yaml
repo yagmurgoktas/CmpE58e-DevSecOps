@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: nginx-test
 spec:
+  automountServiceAccountToken: false
   containers:
     - name: nginx
-      automountServiceAccountToken: false
       image: nginx:1.25.3
       resources:
         requests:
