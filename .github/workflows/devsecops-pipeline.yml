@@ -30,7 +30,9 @@ jobs:
 
     - name: Run unit tests
       run: |
-        PYTHONPATH=src python -m unittest discover -s tests -p "test_*.py"
+        pip install coverage
+        PYTHONPATH=src coverage run -m unittest discover -s tests
+        coverage xml
 
     - name: SonarQube Scan
       uses: SonarSource/sonarqube-scan-action@v5

@@ -5,4 +5,11 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: nginx:latest
+      image: nginx:1.25.3
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "100m"
+        limits:
+          memory: "128Mi"
+          cpu: "250m"
