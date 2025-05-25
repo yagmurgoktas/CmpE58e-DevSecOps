@@ -1,4 +1,3 @@
-# pragma: no cover
 """ Flask application entry point """
 
 from app import app

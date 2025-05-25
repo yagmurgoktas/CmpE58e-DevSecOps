@@ -5,6 +5,7 @@ metadata:
 spec:
   containers:
     - name: nginx
+      automountServiceAccountToken: false
       image: nginx:1.25.3
       resources:
         requests:
