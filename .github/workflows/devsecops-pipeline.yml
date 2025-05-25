@@ -26,7 +26,7 @@ jobs:
 
     - name: Lint with pylint
       run: |
-        pylint app/
+        pylint src/app/
 
     - name: Run unit tests
       run: |
