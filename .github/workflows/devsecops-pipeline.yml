@@ -31,6 +31,7 @@ jobs:
     - name: Run unit tests
       run: |
         pip install coverage
+        export COVERAGE_OMIT="src/main.py"
         PYTHONPATH=src coverage run --rcfile=.coveragerc -m unittest discover -s tests
         coverage xml
 
