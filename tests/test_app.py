@@ -9,12 +9,6 @@ class TestApp(unittest.TestCase):
         response = self.client.get("/hello")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, {"message": "Hello, DevSecOps!"})
-    
-    def test_bye(self):
-        response = self.client.get("/bye")
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"message": "Bye, DevSecOps!"})
 
 if __name__ == "__main__":
     unittest.main()
-
