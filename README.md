@@ -79,6 +79,17 @@ GET http://<EXTERNAL-IP>/hello
 { "message": "Hello, DevSecOps!" }
 ```
 
+#### Example request:
+
+```http
+GET http://<EXTERNAL-IP>/bye
+```
+
+#### Example response:
+
+```json
+{ "message": "Bye, DevSecOps!" }
+```
 ---
 
 ## Gatekeeper Policy
