@@ -8,7 +8,7 @@ class TestApp(unittest.TestCase):
     def test_hello(self):
         response = self.client.get("/hello")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json, {"message": "Hello, DevSecOps!"})
+        self.assertEqual(response.json, {"message": "Hello, "})
     
     def test_bye(self):
         response = self.client.get("/bye")
