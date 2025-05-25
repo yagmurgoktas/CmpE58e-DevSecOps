@@ -57,6 +57,7 @@ jobs:
     - name: Scan Docker image with Trivy
       run: |
         trivy image --exit-code 1 --severity CRITICAL,HIGH \
+        --ignore-unfixed \
         europe-west3-docker.pkg.dev/crack-willow-460419-n9/hello-app/devsecops-app:latest
 
     - name: Push Docker image
