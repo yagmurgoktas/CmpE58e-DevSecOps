@@ -12,6 +12,6 @@ def hello():
     return {"message": "Hello, DevSecOps!"}
 
 @app.route("/bye")
-def hello():
-    """Return a greeting message."""
+def bye():
+    """Return a bye message."""
     return {"message": "Bye, DevSecOps!"}
