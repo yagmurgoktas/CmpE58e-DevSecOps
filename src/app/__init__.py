@@ -10,3 +10,8 @@ app = Flask(__name__)
 def hello():
     """Return a greeting message."""
     return {"message": "Hello, DevSecOps!"}
+
+@app.route("/bye")
+def hello():
+    """Return a greeting message."""
+    return {"message": "Bye, DevSecOps!"}
